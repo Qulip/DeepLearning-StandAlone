@@ -7,9 +7,10 @@ FORMAT = pyaudio.paInt16
 CHANNELS = 2
 RATE = 44100
 RECORD_SECONDS = 5
-WAVE_OUTPUT_FILENAME = "output.wav"
-
+Wav = ".wav"
+name = input("name : ")
 p = pyaudio.PyAudio()
+WAVE_OUTPUT_FILENAME = name+Wav
 
 stream = p.open(format=FORMAT,
                 channels=CHANNELS,
